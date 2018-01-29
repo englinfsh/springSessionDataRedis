@@ -1,0 +1,12 @@
+spring:
+  profiles: 9008
+  application:
+    name: mySession
+
+server:
+  port: 9008
+  context-path: /springSession
+
+redis:
+  hostname: 127.0.0.1
+  port: 6379
