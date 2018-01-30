@@ -47,4 +47,22 @@ public class HelloWorldController extends CommonController {
         return "hello world " + name;
     }
 
+	@RequestMapping("/index/infor")
+    @ResponseBody
+    public String infor(HttpServletRequest request, HttpServletResponse response, HttpSession session) {
+
+		StringBuffer bs = new StringBuffer("");
+		Enumeration<String> pname= session.getAttributeNames();
+        if(pname!=null){
+        	while (pname.hasMoreElements()) {
+				String nn = (String) pname.nextElement();
+				bs.append(nn +" : "+session.getAttribute(nn));
+				bs.append("\n");
+			}
+        }
+        return bs.toString() ;
+    }
+
+
+
 }

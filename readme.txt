@@ -14,5 +14,8 @@ java -jar springSessionDataRedis-0.0.1.jar--spring.profiles.active=9007
 http://slf.test.center:9009/springSession/index/zhangsan
 
 
+http://slf.test.center:9009/springSession/index/infor
+
+
 
 

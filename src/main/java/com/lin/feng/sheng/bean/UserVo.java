@@ -54,4 +54,11 @@ public class UserVo  implements Serializable{
 		return serialVersionUID;
 	}
 
+
+
+	public String toString() {
+		return "UserVo [userName=" + userName + ", password=" + password
+				+ ", age=" + age + ", counts=" + counts + "]";
+	}
+
 }
