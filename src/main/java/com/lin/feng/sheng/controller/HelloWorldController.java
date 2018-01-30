@@ -60,6 +60,7 @@ public class HelloWorldController extends CommonController {
 				bs.append("\n");
 			}
         }
+        logger.info("session-infor:"+ bs);
         return bs.toString() ;
     }
 
