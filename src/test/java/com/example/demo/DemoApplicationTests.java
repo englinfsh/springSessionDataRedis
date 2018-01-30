@@ -43,7 +43,7 @@ public class DemoApplicationTests {
 
 	        MultiValueMap<String, Object> map = new LinkedMultiValueMap<String, Object>();
 	        for (int j = 0; j < 5; j++) {
-	        	map.add("p"+j+i, "Lily"+(i*j));
+	        	map.add("p"+j, "Lily"+(i*j));
 
 			}
 	        String result = template.postForObject(url, map, String.class);
