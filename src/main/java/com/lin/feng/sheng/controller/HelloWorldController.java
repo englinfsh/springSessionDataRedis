@@ -12,6 +12,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.lin.feng.sheng.bean.UserVo;
+
 @RestController
 public class HelloWorldController extends CommonController {
 
@@ -29,6 +31,8 @@ public class HelloWorldController extends CommonController {
         }
 
         session.setAttribute("userName", name);
+        UserVo userVo = new UserVo(name, name+"-123456", 134, name.hashCode());
+        session.setAttribute("userVo", userVo);
 
         Enumeration<String> pname= request.getParameterNames();
         if(pname!=null){

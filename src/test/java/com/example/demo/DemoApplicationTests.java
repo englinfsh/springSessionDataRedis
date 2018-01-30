@@ -34,7 +34,7 @@ public class DemoApplicationTests {
 	 @Test
    public void test3(){
 
-		 for (int i = 1; i < 2; i++) {
+		 for (int i = 0; i < 5; i++) {
 
 	        String url =this.url+ "/index/";
 
@@ -42,7 +42,7 @@ public class DemoApplicationTests {
 	        url=url+name;
 
 	        MultiValueMap<String, Object> map = new LinkedMultiValueMap<String, Object>();
-	        for (int j = 0; j < 5; j++) {
+	        for (int j = 0; j < 10; j++) {
 	        	map.add("p"+j, "Lily"+(i*j));
 
 			}
