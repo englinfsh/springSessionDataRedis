@@ -57,7 +57,7 @@ public class HelloWorldController extends CommonController {
         	while (pname.hasMoreElements()) {
 				String nn = (String) pname.nextElement();
 				bs.append(nn +" : "+session.getAttribute(nn));
-				bs.append("\n");
+				bs.append(" ;  ");
 			}
         }
         logger.info("session-infor:"+ bs);
